@@ -1,0 +1,1351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-full {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.contenedor {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background: #0e1f2e;
+  canvas {
+    opacity: 0.4;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.04rem;
+  .contenedor-full {
+    position: relative;
+
+    // HEADER
+
+    header {
+      .header-top {
+        padding: 30px 0;
+        .flexbox {
+          display: flex;
+          justify-content: space-between;
+
+          // LOGO
+
+          .logo {
+            span {
+              color: #fff;
+              font-size: 30px;
+              font-family: "Oxanium", cursive;
+            }
+          }
+
+          // MENU NAVEGACION
+          button {
+            display: none;
+          }
+          nav {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 55%;
+            ul {
+              display: flex;
+              li {
+                list-style-type: none;
+                margin-right: 25px;
+                a {
+                  font-size: 14px;
+                  color: #fff;
+                  text-transform: capitalize;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // PORTADA PRINCIPAL
+
+      .portada-perfil {
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .flexbox {
+          display: flex;
+          justify-content: space-between;
+          .imagen-perfil {
+            img {
+              position: relative;
+              bottom: -10px;
+            }
+          }
+          .contenido {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 55%;
+            .caja {
+              .titulo {
+                h1 {
+                  color: #fff;
+                  font-size: 50px;
+                }
+              }
+              .quiensoy {
+                font-size: 18px;
+                color: #fff;
+                padding: 15px 0;
+              }
+              .texto {
+                padding: 10px 0;
+                p {
+                  color: #fff;
+                  font-weight: 300;
+                }
+              }
+              .boton {
+                padding-top: 15px;
+                button {
+                  border: 1px solid #ffffff60;
+                  color: #fff;
+                  font-size: 1rem;
+                  line-height: 14px;
+                  background: #ff324d;
+                  padding: 15px 20px;
+                  cursor: pointer;
+                  transition: all 0.5s ease;
+                  border-radius: 2em;
+                  &:hover {
+                    background-color: #fff;
+                    color: #1d1e30;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //   FIN HEADDER
+
+    main {
+      .Sobre-mi {
+        background: #fff;
+        padding: 100px 0 50px 0;
+        .caja {
+          opacity: 0;
+          transition: all 2s ease;
+
+          &.activo {
+            opacity: 1;
+          }
+
+          .flexbox {
+            display: flex;
+            justify-content: space-between;
+
+            // IMAGEN PERFIL
+
+            .imagen-perfil {
+              text-align: center;
+              width: 30%;
+              img {
+                width: 300px;
+                height: 400px;
+                object-fit: cover;
+                object-position: center center;
+                border: 1px solid #8d8a8a60;
+                padding: 20px;
+                box-shadow: 1px 1px 16px #55555540;
+              }
+            }
+
+            // CONOCIMIENTOS
+
+            .conocimientos-tecnicos {
+              .titulo {
+                margin: 0 0 40px 0;
+                h3 {
+                  font-size: 30px;
+                  font-weight: bold;
+                }
+              }
+              width: 65%;
+              .colunna-progressbar-uno,
+              .columna-progressbar-dos {
+                width: 40%;
+                .caja {
+                  padding: 10px 0;
+                  opacity: 1;
+                  .progressbar {
+                    background: #ddd;
+                    width: 100%;
+                    height: 20px;
+                    margin: 20px 0;
+                    border-radius: 2em;
+                  }
+                }
+              }
+
+              // COLUMNA UNO CONOCIMIENTOS
+
+              .colunna-progressbar-uno {
+                .caja {
+                  &:nth-child(1) {
+                    .progressbar {
+                      .barra {
+                        width: 1%;
+                        background: #ff324d;
+                        height: 100%;
+                        border-radius: 2em;
+                        transition: all 2s ease;
+                      }
+                    }
+                  }
+                  &:nth-child(2) {
+                    .progressbar {
+                      .barra {
+                        width: 1%;
+                        background: #ff324d;
+                        height: 100%;
+                        border-radius: 2em;
+                        transition: all 2s ease;
+                      }
+                    }
+                  }
+                  &:nth-child(3) {
+                    .progressbar {
+                      .barra {
+                        width: 1%;
+                        background: #ff324d;
+                        height: 100%;
+                        border-radius: 2em;
+                        transition: all 2s ease;
+                      }
+                    }
+                  }
+                }
+              }
+
+              // COLUMNA DOS CONOCIMIENTOS
+
+              .columna-progressbar-dos {
+                .caja {
+                  &:nth-child(1) {
+                    .progressbar {
+                      .barra {
+                        width: 1%;
+                        background: #ff324d;
+                        height: 100%;
+                        border-radius: 2em;
+                        transition: all 2s ease;
+                      }
+                    }
+                  }
+                  &:nth-child(2) {
+                    .progressbar {
+                      .barra {
+                        width: 1%;
+                        background: #ff324d;
+                        height: 100%;
+                        border-radius: 2em;
+                        transition: all 2s ease;
+                      }
+                    }
+                  }
+                  &:nth-child(3) {
+                    .progressbar {
+                      .barra {
+                        width: 1%;
+                        background: #ff324d;
+                        height: 100%;
+                        border-radius: 2em;
+                        transition: all 2s ease;
+                      }
+                    }
+                  }
+                }
+              }
+
+              // FIN COLUMNA DOS CONOCIMIENTOS
+            }
+
+            // FIN SECCION CONOCIMIENTOS
+          }
+        }
+
+        // HERRAMIENTAS DDE TRABAJO
+
+        .grid-herramientas {
+          border-top: 1px solid #55555525;
+          padding: 35px 0 0 0;
+          margin: 35px 0 0 0;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 25px;
+          .imagen {
+            &:nth-child(1) {
+              img {
+                height: 90px;
+                position: relative;
+                top: -7px;
+              }
+            }
+            &:nth-child(4) {
+              img {
+                height: 65px;
+                position: relative;
+                top: 7px;
+              }
+            }
+            img {
+              height: 75px;
+              width: 100%;
+              object-fit: contain;
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+
+      // fin SECCION SOBRE MI
+
+      // SERVICIOS
+
+      .mis-servicios {
+        background: #0e1f2eb8;
+        padding: 100px 0;
+        opacity: 0;
+        transition: all 2s ease;
+        .titulo {
+          padding: 0 0 35px 0;
+          h3 {
+            font-size: 30px;
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+
+        .servicios-cajas {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 35px;
+          position: relative;
+          .caja {
+            background: #fff;
+            padding: 45px;
+            border-radius: 0.5em;
+            transform: scale(0);
+            transition: all 0.5s ease;
+            .icon {
+              font-size: 45px;
+              color: #ff324d;
+              padding: 0 0 25px 0;
+            }
+            .titulo {
+              padding: 0 0 10px 0;
+              span {
+                font-size: 20px;
+                font-weight: bold;
+                color: #555;
+              }
+            }
+          }
+        }
+      }
+      //  FIN SERVICIOS
+
+      // PORTAFOLIO
+      .portafolio {
+        background: #fff;
+        padding: 100px 0 50px 0;
+        .contenedor {
+          transition: all 2s ease;
+          opacity: 0;
+          .titulo {
+            padding: 0 0 35px 0;
+            h3 {
+              font-size: 30px;
+              color: #000;
+              font-weight: bold;
+            }
+          }
+          .grid-portafolio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+              "caja1 caja2 caja3"
+              "caja4 caja2 caja5"
+              "caja6 caja7 caja5"
+              "caja6 caja8 caja9";
+            grid-gap: 30px;
+            .caja-portafolio {
+              position: relative;
+              width: 100%;
+              background-size: cover;
+              background-position: center center;
+              cursor: pointer;
+              &:hover {
+                .caja {
+                  .overlay {
+                    background: #0000009c;
+                    img {
+                      mix-blend-mode: multiply;
+                    }
+                    .caja-contenido {
+                      opacity: 1;
+                      transform: translateX(0);
+                    }
+                  }
+                }
+              }
+              &:nth-child(1) {
+                grid-area: caja1;
+                transform: scale(0);
+                transition: all 0.7s ease;
+              }
+              &:nth-child(2) {
+                grid-area: caja2;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(3) {
+                grid-area: caja3;
+                transform: scale(0);
+                transition: all 0.7s ease;
+              }
+              &:nth-child(4) {
+                grid-area: caja4;
+                transform: scale(0);
+                transition: all 0.7s ease;
+              }
+              &:nth-child(5) {
+                grid-area: caja5;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 250px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(6) {
+                grid-area: caja6;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 250px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(7) {
+                grid-area: caja7;
+                position: relative;
+                top: -65px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(8) {
+                grid-area: caja8;
+                position: relative;
+                top: -60px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+              }
+              &:nth-child(9) {
+                grid-area: caja9;
+                position: relative;
+                top: -60px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+              }
+              .caja {
+                height: auto;
+                border-radius: 0.5em;
+                .overlay {
+                  box-shadow: 1px 3px 6px #ddddddb8;
+                  transition: all 1s ease;
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                  .caja-contenido {
+                    position: absolute;
+                    bottom: 25px;
+                    left: 25px;
+                    z-index: 3;
+                    opacity: 0;
+                    transition: all 0.8s ease;
+                    transform: translateX(-50px);
+                    color: #fff;
+                    .icono {
+                      padding: 0 0 20px 0;
+                      span {
+                        background: #fff;
+                        padding: 7px 10px;
+                        border-radius: 50%;
+                        transition: all 0.5s ease;
+                        &:hover {
+                          background: transparent;
+                          border: 2px solid #fff;
+                          i {
+                            color: #fff;
+                          }
+                        }
+                        i {
+                          color: #ff324d;
+                        }
+                      }
+                    }
+                    .titulo {
+                      font-weight: bold;
+                      padding: 0;
+                    }
+                    .categoria {
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      // FIN PORTAFOLIO
+    
+     .experiencias {
+       background: #f3eeee;
+       padding: 100px;
+        .contenedor {          
+          opacity: 0;
+          transition: all 2s ease;
+          .titulo {
+            padding: 0 0 35px 0;
+            h3 {
+              font-size: 30px;
+              color: #000;
+              font-weight: bold;
+            }
+          }
+          .caja-tipodeexperiencia {
+            background: #fff;
+            box-shadow: 2px 2px 6px #dddddd;
+            padding: 7px 5px;
+            border-radius: 2em;
+            display: inline-block;
+            margin: 0 0 50px 0;
+            .caja {
+              button {
+                background: transparent;
+                border: 0;
+                border-radius: 2em;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                outline: none;
+              &.activo {
+                background: #FF324D;
+                color:#fff;
+              }  
+              &:hover {
+                background: #FF324D;
+                color:#fff;
+              }
+              }
+            }
+          }
+
+          // FIN EXPERIENCIAS
+
+          // EXPERIECIAS LISTA
+
+          .experiencias-listas {
+            position: relative;
+            .grid-experiencias {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 20px;
+              margin-bottom: 15px;             
+              transform: scale(0);
+              transition: all 0.8s ease;
+              &.experienciaEducacion {
+                &.activo {
+                  transform: scale(1);
+                  display: grid;
+                }
+              }
+              &.experienciaLaboral {
+                position: absolute;
+                top: 0;
+               &.activo {
+                 transform: scale(1);
+                 display: grid;
+               }
+             }              
+                .caja-experiencia {
+                  background: #fff;
+                  padding: 35px;
+                  border-radius: 0.5em;
+                  box-shadow: 2px 2px 6px #dedede;
+                  .contenido-titulo {
+                    padding: 0 0 15px 0;
+                    margin: 0 0 15px 0;
+                    border-bottom: 1px solid #dedede;
+                    .titulo {
+                      font-weight: bold;
+                      padding: 0 0 5px;
+                      font-size: 20px;
+                      color:#555;
+                    }
+                    .fecha {
+                      span {
+                        color:#FF324D;
+                      }
+                    }
+                  }
+                  .contenido-descripcion {
+                  .texto {
+                    font-size: 14px;
+                  }
+                  }
+                }
+            }
+          }
+
+          // Fin Experiencias Listas
+
+        }
+     }
+
+    // FIN EXPERIENCIAS 
+    
+    // Formulario de contacto
+
+    .formulario {
+
+      padding: 100px 0 50px 0;
+      background: #fff;
+       .contenedor {
+        .titulo {
+          padding: 0 0 5px 0;
+          h3 {
+            font-size: 30px;
+            color: #000;
+            font-weight: bold;
+          }
+        } 
+        .flexbox {
+          display: flex;
+          justify-content: space-between;
+
+           .imagen-izquierda {
+             width: 40%;
+             text-align: center;
+             transition: all 1s ease;
+             opacity: 0;
+
+             img {
+                width: 100%;
+                height: 350px;
+                object-fit: contain;
+                position: relative;
+                left: -20px;
+                transition: all 0.8s ease;
+             }
+           }
+           .caja-formulario {
+             width: 55%;
+             justify-content: center;
+             display: flex;
+             flex-direction: column;
+               .correo { 
+                 padding-bottom: 15px;
+                 border-bottom: 1px solid #dedede;
+                 margin-bottom: 15px;
+                }
+                i {
+                  font-size: 22px;
+                  margin-right: 5px;
+                  color:#FF324D;
+                }
+                a {
+                  text-decoration: none;
+                  color:#555;
+                }
+             form {
+                 .primerafila {
+                   display: flex;
+                   justify-content: space-between;
+                   padding: 0 0 40px 0;
+                    // Nombre
+                      .label-nombre {
+                        width: 45%;
+                        border-left: 5px solid #FF324D;
+                        .flexbox {
+                           .nombre {
+                            justify-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            label, input {
+                              width: 100%;
+                              padding: 15px 20px;
+                            }
+                            input {
+                              background: #f3eeeed1;
+                              border: 0;
+                              outline: none;
+                            }
+                            label {
+                              color:#5c5c5c;
+                            }
+                           }
+                        }
+                      }
+                      .label-correo {
+                        width: 45%;
+                         .flexbox {
+                           display: flex;
+                           justify-content: center;
+                           flex-direction: column;                          
+                           border-left: 5px solid #FF324D;
+                           label, input {
+                            width: 100%;
+                            padding: 15px 15px;
+                          }
+                          input {
+                            border: 0;
+                            background: #f3eeeed1;
+                            outline: none;
+                          }
+                          label {
+                            color:#5c5c5c;
+                          }
+                         }
+                      }
+                  }
+                  // Segunda Fila
+
+                  .segundafila {
+                    padding: 0 0 25px 0;
+                    .label-mensaje {
+                      border-left: 5px solid #FF324D;
+                      .flexbox {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        label, textarea {
+                          width: 100%;
+                          padding: 10px 15px;
+                        }
+                        textarea {
+                          height: 200px;
+                          border: 0;
+                          background: #f3eeeed1;
+                          outline: none;
+                        }
+                        label {
+                          color:#5c5c5c;
+                        }
+                      }
+                    }
+                  }
+
+                  // Tercera Fila
+
+                  .tercerafila {
+                    .boton {
+                      input {
+                        background: #FF324D;
+                        color:#fff;
+                        padding: 10px 25px;
+                        border: 0;
+                        outline: none;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+                         &:hover {
+                             border: 1px solid #FF324D;
+                             color:#FF324D;
+                             background: transparent;
+                             font-weight: bold;
+                         }
+                      }
+                    }
+                  } 
+
+             }
+           }
+        }        
+       }
+    }
+      
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             RESPONSIVE VERSION                             */
+/* -------------------------------------------------------------------------- */
+
+
+@media screen and (min-width:800px) and (max-width:1100px) {
+  body {
+    header {
+      .header-top {
+        .flexbox {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: auto;
+          .logo {
+            position: relative;
+            left: 25px;
+            margin-bottom: 15px;
+            span {
+              font-size: 25px !important;
+            }
+          }
+          nav {
+             width: 100% !important;
+             margin: auto;
+             
+             ul {
+               margin: auto;
+               li {
+                 margin-right: 35px;
+                 &:last-child {
+                   margin-right: 0;
+                 }
+               }
+             }
+          }
+        }
+      }
+      .portada-perfil {
+        .flexbox {
+          .imagen-perfil {}
+          .contenido {
+            padding: 0 25px;
+             .caja {
+               .titulo {
+                 h1 {
+                   font-size: 40px !important;
+                 }
+               }
+               .texto {
+                 p {
+                   font-size: 13px;
+                 }
+               }
+             }
+          }
+        }
+      }
+    }
+    // FIN HEADER
+
+    main {
+      .Sobre-mi {
+        padding: 50px 40px 50px 0 !important;
+        .flexbox {
+          .imagen-perfil {
+            text-align: center;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            left: 20px;
+            img {
+              width: 200px !important;
+              height:300px !important;
+            }
+          }
+          .conocimientos-tecnicos {
+             width: 55%;  
+          }
+        }
+      }
+      .mis-servicios {
+        .contenedor {
+          padding: 0 30px 0 30px !important;
+           .servicios-cajas {
+             grid-gap: 15px;
+             .caja {
+               padding: 25px !important;
+               .text {
+                 p {
+                   font-size: 13px;
+                 }
+               }
+             }
+           }
+        }
+      }
+      .portafolio {
+        padding: 100px 40px 50px 40px !important;
+      }
+      .experiencias {
+        .experiencias-listas {
+          .grid-experiencias {
+            grid-gap: 10px !important;
+            .caja-experiencia {
+              padding: 20px !important;
+              .contenido-titulo {
+                .fecha {
+                  font-size: 13px;
+                }
+              }
+              .contenido-descripcion {
+                .texto {
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+      .formulario {
+        padding: 100px 40px 100px 40px !important;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width:640px) and (max-width:799px) {
+  body {
+    header {
+      .header-top {
+        .flexbox {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: auto;
+          .logo {
+            position: relative;
+            left: 25px;
+            margin-bottom: 15px;
+            span {
+              font-size: 25px !important;
+            }
+          }
+          nav {
+             width: 100% !important;
+             margin: auto;
+             
+             ul {
+               margin: auto;
+               li {
+                 margin-right: 35px;
+                 &:last-child {
+                   margin-right: 0;
+                 }
+               }
+             }
+          }
+        }
+      }
+      .portada-perfil {
+        .flexbox {
+          .imagen-perfil {
+            width: 30%;
+            img {
+              left: -70px;
+            }
+          }
+          .contenido {
+            padding: 0 25px;
+             .caja {
+               .titulo {
+                 h1 {
+                   font-size: 30px !important;
+                 }
+               }
+               .texto {
+                 p {
+                   font-size: 13px;
+                 }
+               }
+             }
+          }
+        }
+      }
+    }
+    // FIN HEADER
+
+    main {
+      .Sobre-mi {
+        padding: 50px 0px 50px 0 !important;
+        .flexbox {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          .imagen-perfil {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 35px !important;
+            margin: auto;
+            img {
+              width: 200px !important;
+              height:300px !important;
+            }
+          }
+          .conocimientos-tecnicos {
+             width: 80% !important;
+             margin: auto;
+             .titulo {
+               text-align: center;
+             }
+             .flexbox {
+               display: flex;
+               justify-content: space-between;
+               flex-direction: unset;
+             }  
+          }
+        }
+      }
+      .mis-servicios {
+        .contenedor {
+          padding: 0 30px 0 30px !important;
+           .servicios-cajas {
+             grid-gap: 15px;
+             grid-template-columns: repeat(2, 1fr);
+             .caja {
+               padding: 25px !important;
+               .text {
+                 p {
+                   font-size: 13px;
+                 }
+               }
+             }
+           }
+        }
+      }
+      .portafolio {
+        padding: 100px 40px 50px 40px !important;
+      }
+      .experiencias {
+        .experiencias-listas {
+          .grid-experiencias {
+            grid-gap: 10px !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            .caja-experiencia {
+              padding: 20px !important;
+              .contenido-titulo {
+                .fecha {
+                  font-size: 13px;
+                }
+              }
+              .contenido-descripcion {
+                .texto {
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+      .formulario {
+        padding: 100px 40px 100px 40px !important;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width:310px) and (max-width:639px) {
+  body {
+    overflow-x: hidden;
+    header {
+      .header-top {
+        .flexbox {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: auto;
+          .logo {
+            position: relative;
+            left: 25px;
+            margin-bottom: 15px;
+            left: 0 !important;
+            span {
+              font-size: 25px !important;
+            }
+          }
+          button {
+            background: transparent;
+            width: fit-content;
+            display: block;
+            padding: 7px 15px;
+            font-size: 16px;
+            color: #fff;
+            margin: auto;
+            border: 1px solid #fff;
+            margin-bottom:15px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            display:inline-block !important;
+            outline: none;
+            &:hover {
+              background: #fff;
+              color:#000;
+            }
+             i {
+               padding-right: 10px;
+             }
+          }
+          nav {
+             width: 100% !important;
+             margin: auto;
+             background: #fff;
+             position: absolute;
+             top: 130px;
+             transform: translateX(-100%);
+             transition: all 0.8s ease;             
+             z-index: 999;
+             padding: 20px 0;
+             &.activo {
+               transform: translateX(0);
+             }
+             ul {
+               margin: auto;
+               display: block !important;
+               li {
+                 margin-right: 0 !important;
+                 padding: 15px 0;
+                 border-bottom: 1px solid #dedede;
+                 &:last-child {
+                   margin-right: 0;
+                   border: none !important;
+                 }
+                  a {
+                    color:#555 !important;
+                  }
+               }
+             }
+          }
+        }
+      }
+      .portada-perfil {
+        height: auto !important;
+        padding: 50px 0px;
+        left: -10px;
+        position: relative;
+        .flexbox {
+          display: flex;
+          justify-content: center !important;
+          flex-direction: column !important;
+          .imagen-perfil {
+            display: none;
+            width: 30%;
+            img {
+              left: 0px !important;
+            }
+          }
+          .contenido {
+            width: 100% !important;
+            text-align: center;
+            padding: 0 50px !important;
+            position: relative;
+            left: 10px;
+             .caja {
+               .titulo {
+                 h1 {
+                   font-size: 25px !important;
+                 }
+               }
+               .texto {
+                 p {
+                   font-size: 13px;
+                 }
+               }
+             }
+          }
+        }
+      }
+    }
+    // FIN HEADER
+
+    main {
+      .Sobre-mi {
+        padding: 50px 0px 50px 0 !important;
+        .flexbox {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          .imagen-perfil {
+            text-align: center;
+            width: 45% !important;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 35px !important;
+            margin: auto;
+            img {
+              width: 200px !important;
+              height:300px !important;
+              left: -35px;
+            }
+          }
+          .conocimientos-tecnicos {
+             width: 80% !important;
+             margin: auto;
+             .titulo {
+               text-align: center;
+             }
+             .flexbox {
+               display: flex;
+               justify-content: center;
+               flex-direction: column;
+               .colunna-progressbar-uno, .columna-progressbar-dos {
+                 width: 100% !important;
+                 .nombre {
+                   font-weight: bold;
+                 }
+               }
+             }  
+          }
+        }
+        .grid-herramientas {
+          grid-gap: 10px !important;
+          grid-template-columns: repeat(2, 1fr) !important;
+          .imagen {
+            text-align: center;
+          }
+        }
+      }
+      .mis-servicios {
+        .contenedor {
+          padding: 0 30px 0 30px !important;
+           .servicios-cajas {
+             grid-gap: 15px;
+             grid-template-columns: repeat(1, 1fr) !important;
+             .caja {
+               padding: 25px !important;
+               .text {
+                 p {
+                   font-size: 13px;
+                 }
+               }
+             }
+           }
+        }
+      }
+      .portafolio {
+        padding: 100px 40px 50px 40px !important;
+        .grid-portafolio {
+          grid-template-columns: repeat(1, 1fr) !important;
+          grid-template-areas: "caja1"
+                               "caja2"
+                               "caja3"
+                               "caja4"
+                               "caja5"
+                               "caja6"
+                               "caja7"
+                               "caja8"
+                               "caja9" !important;
+        }
+      }
+      .experiencias {
+        padding: 50px !important;
+        .experiencias-listas {
+          .grid-experiencias {
+            grid-gap: 10px !important;
+            grid-template-columns: repeat(1, 1fr) !important;
+            .caja-experiencia {
+              padding: 20px !important;
+              .contenido-titulo {
+                .fecha {
+                  font-size: 13px;
+                }
+              }
+              .contenido-descripcion {
+                .texto {
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+      .formulario {
+        padding: 100px 40px 100px 40px !important;
+        .contenedor {
+          .flexbox {
+            justify-content: center !important;
+            flex-direction: column !important;
+             .caja-formulario {
+               width: 90% !important;
+               form {
+                 .label-nombre, .label-correo {
+                   width: 100% !important;
+                   margin-bottom: 20px;
+                 }
+                 .boton {
+                   input {
+                     display: block;
+                   }
+                 }
+               }
+             }
+             .imagen-izquierda {
+               display: none !important;
+             }
+          }
+        }
+      }
+    }
+
+  }
+}
