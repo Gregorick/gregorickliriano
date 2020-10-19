@@ -394,7 +394,10 @@ body {
               "caja1 caja2 caja3"
               "caja4 caja2 caja5"
               "caja6 caja7 caja5"
-              "caja6 caja8 caja9";
+              "caja6 caja8 caja9"
+              "caja10 caja11 caja12"
+              "caja13 caja14 caja15"
+              "caja16 caja17 caja18";
             grid-gap: 30px;
             .caja-portafolio {
               position: relative;
@@ -495,6 +498,104 @@ body {
                 transform: scale(0);
                 transition: all 0.7s ease;
               }
+              &:nth-child(10) {
+                grid-area: caja10;
+                position: relative;
+                top: -70px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(11) {
+                grid-area: caja11;
+                position: relative;
+                top: -60px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(12) {
+                grid-area: caja12;
+                position: relative;
+                top: -60px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(13) {
+                grid-area: caja13;
+                position: relative;
+                top: -210px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(14) {
+                grid-area: caja14;
+                position: relative;
+                top: -75px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(15) {
+                grid-area: caja15;
+                position: relative;
+                top: -210px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 50px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(16) {
+                grid-area: caja16;
+                position: relative;
+                top: -350px;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 50px;
+                    }
+                  }
+                }
+              }                                                  
               .caja {
                 height: auto;
                 border-radius: 0.5em;
@@ -1292,7 +1393,19 @@ body {
                                "caja6"
                                "caja7"
                                "caja8"
-                               "caja9" !important;
+                               "caja9"
+                               "caja10"
+                               "caja11"
+                               "caja12"
+                               "caja13"
+                               "caja14"
+                               "caja15" 
+                               !important;
+          .caja-portafolio {
+            &:nth-child(14) {
+              top: -205px !important;
+            }
+          }                      
         }
       }
       .experiencias {

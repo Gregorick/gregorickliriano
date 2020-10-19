@@ -418,7 +418,7 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "caja1 caja2 caja3" "caja4 caja2 caja5" "caja6 caja7 caja5" "caja6 caja8 caja9";
+      grid-template-areas: "caja1 caja2 caja3" "caja4 caja2 caja5" "caja6 caja7 caja5" "caja6 caja8 caja9" "caja10 caja11 caja12" "caja13 caja14 caja15" "caja16 caja17 caja18";
   grid-gap: 30px;
 }
 
@@ -557,6 +557,118 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: caja10;
+  position: relative;
+  top: -70px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(10) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: caja11;
+  position: relative;
+  top: -60px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(11) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: caja12;
+  position: relative;
+  top: -60px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(12) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(13) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: caja13;
+  position: relative;
+  top: -210px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(13) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(14) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: caja14;
+  position: relative;
+  top: -75px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(14) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(15) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: caja15;
+  position: relative;
+  top: -210px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(15) .caja .overlay .caja-contenido {
+  top: 50px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: caja16;
+  position: relative;
+  top: -350px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(16) .caja .overlay .caja-contenido {
+  top: 50px;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja {
@@ -1406,7 +1518,10 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
   body main .portafolio .grid-portafolio {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
-        grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9" !important;
+        grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9" "caja10" "caja11" "caja12" "caja13" "caja14" "caja15"  !important;
+  }
+  body main .portafolio .grid-portafolio .caja-portafolio:nth-child(14) {
+    top: -205px !important;
   }
   body main .experiencias {
     padding: 50px !important;

@@ -160,6 +160,13 @@ const parallax = document.getElementById('sobremi'),
        portafolio7 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(7)'),
        portafolio8 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(8)'),
        portafolio9 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(9)'),
+       portafolio10 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(10)'),
+       portafolio11 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(11)'),
+       portafolio12 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(12)'),
+       portafolio13 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(13)'),
+       portafolio14 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(14)'),
+       portafolio15 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(15)'),
+       portafolio16 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(16)'),       
        imagenContacto = document.getElementById('imagenIzquierda'),
        imgContacto = document.querySelector('.imagen-izquierda img'),
        pxServicios = document.getElementById('mis-servicios');
@@ -197,6 +204,13 @@ setTimeout(() => { portafolio6.style.transform = `scale(${ 1 * wscrolltres })`; 
 setTimeout(() => { portafolio7.style.transform = `scale(${ 1 * wscrolltres })`; }, 700)
 setTimeout(() => { portafolio8.style.transform = `scale(${ 1 * wscrolltres })`; }, 800)
 setTimeout(() => { portafolio9.style.transform = `scale(${ 1 * wscrolltres })`; }, 900)
+setTimeout(() => { portafolio10.style.transform = `scale(${ 1 * wscrolltres })`; }, 1000)
+setTimeout(() => { portafolio11.style.transform = `scale(${ 1 * wscrolltres })`; }, 1200)
+setTimeout(() => { portafolio12.style.transform = `scale(${ 1 * wscrolltres })`; }, 1300)
+setTimeout(() => { portafolio13.style.transform = `scale(${ 1 * wscrolltres })`; }, 1400)
+setTimeout(() => { portafolio14.style.transform = `scale(${ 1 * wscrolltres })`; }, 1500)
+setTimeout(() => { portafolio15.style.transform = `scale(${ 1 * wscrolltres })`; }, 1600)
+setTimeout(() => { portafolio16.style.transform = `scale(${ 1 * wscrolltres })`; }, 1700)
 });
 
 
