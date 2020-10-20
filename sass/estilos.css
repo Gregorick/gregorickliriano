@@ -1518,7 +1518,7 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
   body main .portafolio .grid-portafolio {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
-        grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9" "caja10" "caja11" "caja12" "caja13" "caja14" "caja15"  !important;
+        grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9" "caja10" "caja11" "caja12" "caja13" "caja14" "caja15" "caja16"   !important;
   }
   body main .portafolio .grid-portafolio .caja-portafolio:nth-child(14) {
     top: -205px !important;
