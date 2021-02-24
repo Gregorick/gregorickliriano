@@ -418,7 +418,7 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "caja1 caja2 caja3" "caja4 caja2 caja5" "caja6 caja7 caja5" "caja6 caja8 caja9" "caja10 caja11 caja12" "caja13 caja14 caja15" "caja16 caja17 caja18";
+      grid-template-areas: "caja1 caja2 caja3" "caja4 caja5 caja6" "caja7 caja8 caja9" "caja10 caja11 caja12" "caja13 caja14 caja15" "caja16 caja17 caja18" "caja19 caja20 caja21";
   grid-gap: 30px;
 }
 
@@ -454,9 +454,12 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
   transition: all 0.7s ease;
 }
 
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(1) .caja .overlay .caja-contenido {
+  bottom: 100px;
+}
+
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(2) {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: caja2;
   -webkit-transform: scale(0);
@@ -479,6 +482,10 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
   transition: all 0.7s ease;
 }
 
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(3) .caja .overlay .caja-contenido {
+  bottom: 100px;
+}
+
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(4) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -489,10 +496,13 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
   transition: all 0.7s ease;
 }
 
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(4) .caja .overlay .caja-contenido {
+  bottom: 100px;
+}
+
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(5) {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: caja5;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -501,13 +511,12 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(5) .caja .overlay .caja-contenido {
-  bottom: 250px;
+  bottom: 100px;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: caja6;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -516,15 +525,14 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(6) .caja .overlay .caja-contenido {
-  bottom: 250px;
+  bottom: 100px;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(7) {
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: caja7;
   position: relative;
-  top: -65px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -536,35 +544,40 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(8) {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: caja8;
   position: relative;
-  top: -60px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(8) .caja .overlay .caja-contenido {
+  bottom: 100px;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(9) {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: caja9;
   position: relative;
-  top: -60px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(9) .caja .overlay .caja-contenido {
+  bottom: 100px;
+}
+
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(10) {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: caja10;
   position: relative;
-  top: -70px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -576,11 +589,10 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(11) {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: caja11;
   position: relative;
-  top: -60px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -592,11 +604,10 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(12) {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: caja12;
   position: relative;
-  top: -60px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -608,11 +619,10 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(13) {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: caja13;
   position: relative;
-  top: -210px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -624,11 +634,10 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(14) {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: caja14;
   position: relative;
-  top: -75px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -640,11 +649,10 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(15) {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: caja15;
   position: relative;
-  top: -210px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -652,15 +660,14 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(15) .caja .overlay .caja-contenido {
-  top: 50px;
+  top: 100px;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(16) {
-  -ms-grid-row: 7;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: caja16;
   position: relative;
-  top: -350px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.7s ease;
@@ -668,7 +675,52 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(16) .caja .overlay .caja-contenido {
-  top: 50px;
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(17) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: caja17;
+  position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(17) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(18) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: caja18;
+  position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(18) .caja .overlay .caja-contenido {
+  top: 100px;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(19) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: caja19;
+  position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(19) .caja .overlay .caja-contenido {
+  top: 100px;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja {
@@ -686,6 +738,8 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja .overlay img {
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 2px 3px 6px #00000030;
+          box-shadow: 2px 3px 6px #00000030;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja .overlay .caja-contenido {

@@ -166,7 +166,10 @@ const parallax = document.getElementById('sobremi'),
        portafolio13 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(13)'),
        portafolio14 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(14)'),
        portafolio15 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(15)'),
-       portafolio16 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(16)'),       
+       portafolio16 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(16)'),
+       portafolio17 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(17)'),
+       portafolio18 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(18)'),
+       portafolio19 = document.querySelector('.grid-portafolio .caja-portafolio:nth-child(19)'),          
        imagenContacto = document.getElementById('imagenIzquierda'),
        imgContacto = document.querySelector('.imagen-izquierda img'),
        pxServicios = document.getElementById('mis-servicios');
@@ -211,6 +214,9 @@ setTimeout(() => { portafolio13.style.transform = `scale(${ 1 * wscrolltres })`;
 setTimeout(() => { portafolio14.style.transform = `scale(${ 1 * wscrolltres })`; }, 1500)
 setTimeout(() => { portafolio15.style.transform = `scale(${ 1 * wscrolltres })`; }, 1600)
 setTimeout(() => { portafolio16.style.transform = `scale(${ 1 * wscrolltres })`; }, 1700)
+setTimeout(() => { portafolio17.style.transform = `scale(${ 1 * wscrolltres })`; }, 1800)
+setTimeout(() => { portafolio18.style.transform = `scale(${ 1 * wscrolltres })`; }, 1900)
+setTimeout(() => { portafolio19.style.transform = `scale(${ 1 * wscrolltres })`; }, 2000)
 });
 
 

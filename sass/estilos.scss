@@ -392,12 +392,12 @@ body {
             grid-template-rows: auto;
             grid-template-areas:
               "caja1 caja2 caja3"
-              "caja4 caja2 caja5"
-              "caja6 caja7 caja5"
-              "caja6 caja8 caja9"
+              "caja4 caja5 caja6"
+              "caja7 caja8 caja9"
               "caja10 caja11 caja12"
               "caja13 caja14 caja15"
-              "caja16 caja17 caja18";
+              "caja16 caja17 caja18"
+              "caja19 caja20 caja21";
             grid-gap: 30px;
             .caja-portafolio {
               position: relative;
@@ -423,6 +423,13 @@ body {
                 grid-area: caja1;
                 transform: scale(0);
                 transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
               }
               &:nth-child(2) {
                 grid-area: caja2;
@@ -440,11 +447,25 @@ body {
                 grid-area: caja3;
                 transform: scale(0);
                 transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
               }
               &:nth-child(4) {
                 grid-area: caja4;
                 transform: scale(0);
                 transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
               }
               &:nth-child(5) {
                 grid-area: caja5;
@@ -453,7 +474,7 @@ body {
                 .caja {
                   .overlay {
                     .caja-contenido {
-                      bottom: 250px;
+                      bottom: 100px;
                     }
                   }
                 }
@@ -465,7 +486,7 @@ body {
                 .caja {
                   .overlay {
                     .caja-contenido {
-                      bottom: 250px;
+                      bottom: 100px;
                     }
                   }
                 }
@@ -473,7 +494,6 @@ body {
               &:nth-child(7) {
                 grid-area: caja7;
                 position: relative;
-                top: -65px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
@@ -487,21 +507,32 @@ body {
               &:nth-child(8) {
                 grid-area: caja8;
                 position: relative;
-                top: -60px;
                 transform: scale(0);
                 transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
               }
               &:nth-child(9) {
                 grid-area: caja9;
                 position: relative;
-                top: -60px;
                 transform: scale(0);
                 transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      bottom: 100px;
+                    }
+                  }
+                }
               }
               &:nth-child(10) {
                 grid-area: caja10;
                 position: relative;
-                top: -70px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
@@ -515,7 +546,6 @@ body {
               &:nth-child(11) {
                 grid-area: caja11;
                 position: relative;
-                top: -60px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
@@ -529,7 +559,6 @@ body {
               &:nth-child(12) {
                 grid-area: caja12;
                 position: relative;
-                top: -60px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
@@ -543,7 +572,6 @@ body {
               &:nth-child(13) {
                 grid-area: caja13;
                 position: relative;
-                top: -210px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
@@ -557,7 +585,6 @@ body {
               &:nth-child(14) {
                 grid-area: caja14;
                 position: relative;
-                top: -75px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
@@ -571,13 +598,12 @@ body {
               &:nth-child(15) {
                 grid-area: caja15;
                 position: relative;
-                top: -210px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
                   .overlay {
                     .caja-contenido {
-                      top: 50px;
+                      top: 100px;
                     }
                   }
                 }
@@ -585,17 +611,55 @@ body {
               &:nth-child(16) {
                 grid-area: caja16;
                 position: relative;
-                top: -350px;
                 transform: scale(0);
                 transition: all 0.7s ease;
                 .caja {
                   .overlay {
                     .caja-contenido {
-                      top: 50px;
+                      top: 100px;
                     }
                   }
                 }
-              }                                                  
+              } 
+              &:nth-child(17) {
+                grid-area: caja17;
+                position: relative;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(18) {
+                grid-area: caja18;
+                position: relative;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              } 
+              &:nth-child(19) {
+                grid-area: caja19;
+                position: relative;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }                                                   
               .caja {
                 height: auto;
                 border-radius: 0.5em;
@@ -605,6 +669,7 @@ body {
                   img {
                     width: 100%;
                     height: auto;
+                    box-shadow: 2px 3px 6px #00000030;
                   }
                   .caja-contenido {
                     position: absolute;
