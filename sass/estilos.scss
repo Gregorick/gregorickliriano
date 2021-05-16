@@ -397,8 +397,9 @@ body {
               "caja10 caja11 caja12"
               "caja13 caja14 caja15"
               "caja16 caja17 caja18"
-              "caja19 caja20 caja21";
-            grid-gap: 30px;
+              "caja19 caja20 caja21"
+              "caja22 caja23 caja24";
+              grid-gap: 30px;
             .caja-portafolio {
               position: relative;
               width: 100%;
@@ -659,7 +660,46 @@ body {
                     }
                   }
                 }
-              }                                                   
+              }  
+              &:nth-child(20) {
+                grid-area: caja20;
+                position: relative;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              } 
+              &:nth-child(21) {
+                grid-area: caja21;
+                position: relative;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(22) {
+                grid-area: caja22;
+                position: relative;
+                transform: scale(0);
+                transition: all 0.7s ease;
+                .caja {
+                  .overlay {
+                    .caja-contenido {
+                      top: 100px;
+                    }
+                  }
+                }
+              }                                                                                     
               .caja {
                 height: auto;
                 border-radius: 0.5em;
