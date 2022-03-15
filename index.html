@@ -1,801 +1,767 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oxanium:200,300,400,500,600,700,800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Curriculum Gregorick Liriano</title>
-    <link rel="stylesheet" href="sass/estilos.css" />
-  </head>
 
-  <body>
-    <div id="particles-js"></div>
-    <div id="parallax" class="contenedor-full">
-      <header>
-        <div class="contenedor header-top">
-          <div class="flexbox">
-            <div class="logo">
-              <span> < Gregorick Liriano /></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oxanium:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet" />
+  <title>Curriculum Gregorick Liriano</title>
+  <link rel="stylesheet" href="sass/estilos.css" />
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div id="parallax" class="contenedor-full">
+    <header>
+      <div class="contenedor header-top">
+        <div class="flexbox">
+          <div class="logo">
+            <span>
+              < Gregorick Liriano />
+            </span>
+          </div>
+          <button id="botonResponsive" class="menu-responsive"><i class="fas fa-bars"></i> MENU</button>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#mis-servicios">Servicios</a></li>
+              <li><a href="#mis-portafolios">Portafolio</a></li>
+              <li><a href="#mis-experiencias">Experiencias</a></li>
+              <li><a href="#contactame">Contáctame</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="contenedor portada-perfil">
+        <div class="flexbox">
+          <div class="imagen-perfil">
+            <div class="imagen">
+              <img src="img/Perfil-Gregorick-principal.png" alt="Imagen Perfil Principal" />
             </div>
-            <button id="botonResponsive" class="menu-responsive"><i class="fas fa-bars"></i> MENU</button>
-            <nav class="menu">
-              <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#mis-servicios">Servicios</a></li>
-                <li><a href="#mis-portafolios">Portafolio</a></li>
-                <li><a href="#mis-experiencias">Experiencias</a></li>
-                <li><a href="#contactame">Contáctame</a></li>
-              </ul>
-            </nav>
+          </div>
+          <div class="contenido">
+            <div class="caja">
+              <div class="titulo">
+                <h1>Gregorick Liriano</h1>
+              </div>
+              <div class="quiensoy">Yo soy <span class="typed"></span></div>
+              <div class="texto">
+                <p> Soy licenciado en Publicidad con un máster en Dirección de Publicidad Integrada.
+                  Apasionado por crear marcas digitales a través del marketing digital y desarrolló de sitios webs.
+                </p>
+              </div>
+              <div class="boton">
+                <a href="#contactame"><button>Contáctame</button></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="contenedor portada-perfil">
+      </div>
+    </header>
+    <main>
+      <!-- PAGINA SOBRE MI -->
+
+      <div class="contenedor-full Sobre-mi">
+        <div id="sobremi" class="contenedor caja">
           <div class="flexbox">
             <div class="imagen-perfil">
-              <div class="imagen">
-                <img
-                  src="img/Perfil-Gregorick-principal.png"
-                  alt="Imagen Perfil Principal"
-                />
-              </div>
+              <img src="img/Perfil-Gregorick-3.jpg" alt="Imagen Perfil" />
             </div>
-            <div class="contenido">
-              <div class="caja">
-                <div class="titulo">
-                  <h1>Gregorick Liriano</h1>
-                </div>
-                <div class="quiensoy">Yo soy <span class="typed"></span></div>
-                <div class="texto">
-                  <p> Soy licenciado en Publicidad con un máster en Dirección de Publicidad Integrada.
-                    Apasionado por crear marcas digitales a través del marketing digital y desarrolló de sitios webs. 
-                  </p>
-                </div>
-                <div class="boton">
-                  <a href="#contactame"><button>Contáctame</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main>
-        <!-- PAGINA SOBRE MI -->
-
-        <div class="contenedor-full Sobre-mi">
-          <div id="sobremi" class="contenedor caja">
-            <div class="flexbox">
-              <div class="imagen-perfil">
-                <img src="img/Perfil-Gregorick-3.jpg" alt="Imagen Perfil" />
-              </div>
-              <div class="conocimientos-tecnicos">
-                <div class="titulo">
-                  <h3>Conocimientos</h3>
-                </div>
-                <div class="flexbox">
-                  <div class="colunna-progressbar-uno">
-                    <div class="caja">
-                      <div class="conocimiento">
-                        <div class="flexbox">
-                          <span class="nombre">HTML5</span>
-                          <div class="numeroporciento"><span>90%</span></div>
-                        </div>
-                      </div>
-                      <div class="progressbar">
-                        <div class="barra"></div>
-                      </div>
-                    </div>
-                    <div class="caja">
-                      <div class="conocimiento">
-                        <div class="flexbox">
-                          <span class="nombre">CSS / SASS</span>
-                          <div class="numeroporciento"><span>90%</span></div>
-                        </div>
-                      </div>
-                      <div class="progressbar">
-                        <div class="barra"></div>
-                      </div>
-                    </div>
-                    <div class="caja">
-                      <div class="conocimiento">
-                        <div class="flexbox">
-                          <span class="nombre">JAVASCRIPT</span>
-                          <div class="numeroporciento"><span>85%</span></div>
-                        </div>
-                      </div>
-                      <div class="progressbar">
-                        <div class="barra"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="columna-progressbar-dos">
-                    <div class="caja">
-                      <div class="conocimiento">
-                        <div class="flexbox">
-                          <span class="nombre">WORDPRESS</span>
-                          <div class="numeroporciento"><span>90%</span></div>
-                        </div>
-                      </div>
-                      <div class="progressbar">
-                        <div class="barra"></div>
-                      </div>
-                    </div>
-                    <div class="caja">
-                      <div class="conocimiento">
-                        <div class="flexbox">
-                          <span class="nombre">REACT / NODE / EXPRESS</span>
-                          <div class="numeroporciento"><span>65%</span></div>
-                        </div>
-                      </div>
-                      <div class="progressbar">
-                        <div class="barra"></div>
-                      </div>
-                    </div>
-                    <div class="caja">
-                      <div class="conocimiento">
-                        <div class="flexbox">
-                          <span class="nombre">Mysql / MOGODB</span>
-                          <div class="numeroporciento"><span>65%<span></div>
-                        </div>
-                      </div>
-                      <div class="progressbar">
-                        <div class="barra"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- HERRAMIENTAS DE TRABAJO -->
-
-            <div class="grid-herramientas">
-              <div class="imagen">
-                <img src="img/adobe-photoshop.png" alt="Photoshop" />
-              </div>
-              <div class="imagen">
-                <img src="img/AdobeXD.png" alt="Photoshop" />
-              </div>
-              <div class="imagen">
-                <img src="img/VisualCodeEstudio.png" alt="Photoshop" />
-              </div>              
-              <div class="imagen">
-                <img src="img/wordpress.png" alt="Photoshop" />
-              </div>
-              <div class="imagen">
-                <img src="img/mern-img.png" alt="Photoshop" />
-              </div>              
-            </div>
-            <!-- fin herramientas de trabajo -->
-          </div>
-        </div>
-
-        <!-- FIN SOBRE MI -->
-
-        <div id="mis-servicios" class="mis-servicios contenedor-full">
-          <div class="contenedor">
-            <div class="titulo">
-              <h3>Servicios</h3>
-            </div>
-            <div class="servicios-cajas">
-              <div class="caja">
-                <div class="icon"><i class="fas fa-tablet-alt"></i></div>
-                <div class="titulo"><span>Diseño Personalizado</span></div>
-                <div class="text">
-                  <p>
-                    Diseño elegante de páginas web desde cero desarrollado a la medida. 
-                  </p>
-                </div>
-              </div>
-              <div class="caja">
-                <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                <div class="titulo"><span>Desarrollo Web</span></div>
-                <div class="text">
-                  <p>
-                    Desarrollo web dinámico para escritorio y dispositivos móviles, maquetado y programado a la medida con rendimiento y seguridad optimizados.
-                  </p>
-                </div>
-              </div>
-              <div class="caja">
-                <div class="icon"><i class="fas fa-bullhorn"></i></div>
-                <div class="titulo"><span>Marketing Digital</span></div>
-                <div class="text">
-                  <p>
-                     Posicionamiento web a través del SEO, SEM y campañas de correos masivos. 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experiencias -->
-
-        <div id="mis-portafolios" class="portafolio contenedor-full">
-          <div class="contenedor">
-            <div class="titulo">
-              <h3>Portafolio</h3>
-            </div>
-            <div class="grid-portafolio">
-                 <!-- Portafolio grid 01 -->
-                 <div class="caja-portafolio">
-                  <div class="caja">
-                     <div class="overlay">
-                       <a target="_blank" href="http://angelicayjuan.com/"> <img
-                         src="img/portafolio/angelicayjuan.jpg"
-                         alt=""
-                       /></a>
-                       <div class="caja-contenido">
-                         <div class="icono">
-                           <div class="flexbox">
-                             <a target="_blank" href="http://angelicayjuan.com/"><span><i class="fas fa-plus"></i></span></a>
-                           </div>
-                         </div>
-                         <div class="titulo">Angélica y Juan</div>
-                         <div class="categoria">Celebración de bodas</div>
-                       </div>
-                      </div>
-                   </div>
-                 </div>
-                 <!-- Portafolio grid 01 -->
-                  <div class="caja-portafolio">
-                     <div class="caja">
-                        <div class="overlay">
-                          <a target="_blank" href="http://studikard.com/"> <img
-                            src="img/portafolio/studikardcom.jpg"
-                            alt=""
-                          /></a>
-                          <div class="caja-contenido">
-                            <div class="icono">
-                              <div class="flexbox">
-                                <a target="_blank" href="http://studikard.com/"><span><i class="fas fa-plus"></i></span></a>
-                              </div>
-                            </div>
-                            <div class="titulo">Studika</div>
-                            <div class="categoria">Centro Diagnóstico Intergral</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>              
-                  <!-- Portafolio grid 01 -->
-                 <div class="caja-portafolio">
-                    <div class="caja">
-                      <div class="overlay">
-                        <a target="_blank" href="http://hris.do/"> <img
-                          src="img/portafolio/hrisdo.jpg"
-                          alt=""
-                        /></a>
-                        <div class="caja-contenido">
-                          <div class="icono">
-                            <div class="flexbox">
-                              <a target="_blank" href="http://hris.do/"><span><i class="fas fa-plus"></i></span></a>
-                            </div>
-                          </div>
-                          <div class="titulo">Herrera Rodriguez</div>
-                          <div class="categoria">Complejos deportivos</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>            
-                  <!-- Portafolio grid 01 -->
-                  <div class="caja-portafolio">
-                    <div class="caja">
-                      <div class="overlay">
-                        <a target="_blank" href="http://sq.com.do/"> <img
-                          src="img/portafolio/shutterquisqueyanos-portafolio.jpg"
-                          alt=""
-                        /></a>
-                        <div class="caja-contenido">
-                          <div class="icono">
-                            <div class="flexbox">
-                              <a target="_blank" href="http://sq.com.do/"><span><i class="fas fa-plus"></i></span></a>
-                            </div>
-                          </div>
-                          <div class="titulo">Shutter Quisqueyanos</div>
-                          <div class="categoria">Instalación de Shutters</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Portafolio 18 -->
-                  <div class="caja-portafolio">
-                    <div class="caja">
-                      <div class="overlay">
-                        <a target="_blank" href="http://publichealthliteracy.org/"><img
-                          src="img/portafolio/publichealthliteracyGlobal-portafolio.jpg"
-                          alt=""
-                        /></a>
-                        <div class="caja-contenido">
-                          <div class="icono">
-                            <div class="flexbox">
-                              <a target="_blank" href="http://publichealthliteracy.org/"><span><i class="fas fa-plus"></i></span></a>
-                            </div>
-                          </div>
-                          <div class="titulo">Public Health Literacy </div>
-                          <div class="categoria">Salud</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-                  <!-- Portafolio 19 -->
-                  <div class="caja-portafolio">
-                    <div class="caja">
-                      <div class="overlay">
-                        <a target="_blank" href="http://elintermedio.com.do/"><img
-                          src="img/portafolio/elintermedio-portafolio.jpg"
-                          alt=""
-                        /></a>
-                        <div class="caja-contenido">
-                          <div class="icono">
-                            <div class="flexbox">
-                              <a target="_blank" href="http://elintermedio.com.do/"><span><i class="fas fa-plus"></i></span></a>
-                            </div>
-                          </div>
-                          <div class="titulo">El Intermedio</div>
-                          <div class="categoria">Noticias</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>               
-              <!-- Portafolio 1 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://mdmadesigngroup.com/mdma/"
-                            ><img
-                      src="img/portafolio/mdmadesigngrup-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a
-                            target="_blank"
-                            href="http://mdmadesigngroup.com/mdma/"
-                            ><span><i class="fas fa-plus"></i></span
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="titulo">MDMA</div>
-                      <div class="categoria">Men Magazine</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 2 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://stylemecocco.com/">
-                      <img src="img/portafolio/stylemecocco-portafolio.jpg" alt="" /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://stylemecocco.com/"
-                            ><span><i class="fas fa-plus"></i></span
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Style me cocco</div>
-                      <div class="categoria">Hogar</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 3 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank"  href="http://mdmadesigngroup.com/hervoice/"
-                            ><img src="img/portafolio/hervoicedesigngrup-portafolio.jpg" alt="" /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a
-                            target="_blank"
-                            href="http://mdmadesigngroup.com/hervoice/"
-                            ><span><i class="fas fa-plus"></i></span
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Hervoice</div>
-                      <div class="categoria">Magazine</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 4 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://extragas.com.do/"><img src="img/portafolio/Extragas-portafolio.jpg" alt="" /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://extragas.com.do/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Extragas</div>
-                      <div class="categoria">Estación de Gas</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 5 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://miraclemedicalcentre.com/"><img
-                      src="img/portafolio/miraclemedicalcentre-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://miraclemedicalcentre.com/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Miracle Medical Centre</div>
-                      <div class="categoria">Salud</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 6 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://grlnow.com/yashodacorporation/"> <img
-                      src="img/portafolio/yashodacorporation-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                         <a target="_blank" href="http://grlnow.com/yashodacorporation/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Yashoda Corporation</div>
-                      <div class="categoria">Properties</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 7 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://elsantodomingonoticias.net/"><img
-                      src="img/portafolio/elsantodomingonoticias-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://elsantodomingonoticias.net/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Santo Domingo Noticias</div>
-                      <div class="categoria">Noticias</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 8 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://vaginoplastialaser.com.do/"><img
-                      src="img/portafolio/Vaginoplastiard-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://vaginoplastialaser.com.do/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">vaginoplastia Laser</div>
-                      <div class="categoria">Salud</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 9 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://azizeinforma.com/"><img
-                      src="img/portafolio/azizeinforma-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://azizeinforma.com/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Azizeinforma</div>
-                      <div class="categoria">Noticias</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 10 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://eslabones.es/"><img src="img/portafolio/Eslabones-portafolio.jpg" alt="" /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://eslabones.es/"
-                            ><span><i class="fas fa-plus"></i></span
-                          ></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Eslabones</div>
-                      <div class="categoria">Viajes</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-               <!-- Portafolio 11 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://www.publichealthliteracy-conference.org/"><img
-                      src="img/portafolio/publichealthliteracy-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                         <a target="_blank" href="http://www.publichealthliteracy-conference.org/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Public Health Literacy</div>
-                      <div class="categoria">Salud</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Portafolio 12 -->
-              <div class="caja-portafolio">
-                <div class="caja">
-                  <div class="overlay">
-                    <a target="_blank" href="http://trulynolendominicana.com/"><img
-                      src="img/portafolio/trulynolen-portafolio.jpg"
-                      alt=""
-                    /></a>
-                    <div class="caja-contenido">
-                      <div class="icono">
-                        <div class="flexbox">
-                          <a target="_blank" href="http://trulynolendominicana.com/"><span><i class="fas fa-plus"></i></span></a>
-                        </div>
-                      </div>
-                      <div class="titulo">Truly Nolen Dominicana</div>
-                      <div class="categoria">Fumigadores</div>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            <!-- Portafolio 13 -->
-                <div class="caja-portafolio">
-                  <div class="caja">
-                    <div class="overlay">
-                      <a target="_blank" href="http://gelantibacterialvenus.com/"><img
-                        src="img/portafolio/gelantibacterialVenusportafolio.jpg"
-                        alt=""
-                      /></a>
-                      <div class="caja-contenido">
-                        <div class="icono">
-                          <div class="flexbox">
-                            <a target="_blank" href="http://gelantibacterialvenus.com/"><span><i class="fas fa-plus"></i></span></a>
-                          </div>
-                        </div>
-                        <div class="titulo">Gel Antibacterial Venus</div>
-                        <div class="categoria">Salud</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portafolio 14 -->
-                <div class="caja-portafolio">
-                  <div class="caja">
-                    <div class="overlay">
-                      <a target="_blank" href="http://andresalma.com/"><img
-                        src="img/portafolio/andresalma-portafolio.jpg"
-                        alt=""
-                      /></a>
-                      <div class="caja-contenido">
-                        <div class="icono">
-                          <div class="flexbox">
-                            <a target="_blank" href="http://andresalma.com/"><span><i class="fas fa-plus"></i></span></a>
-                          </div>
-                        </div>
-                        <div class="titulo">Andras Alma</div>
-                        <div class="categoria">Política</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>   
-                <!-- Portafolio 15 -->
-                <div class="caja-portafolio">
-                  <div class="caja">
-                    <div class="overlay">
-                      <a target="_blank" href="http://constructoramac.com.do/"><img
-                        src="img/portafolio/Mac-portafolio.jpg"
-                        alt=""
-                      /></a>
-                      <div class="caja-contenido">
-                        <div class="icono">
-                          <div class="flexbox">
-                            <a target="_blank" href="http://constructoramac.com.do/"><span><i class="fas fa-plus"></i></span></a>
-                          </div>
-                        </div>
-                        <div class="titulo">Constructora Mac</div>
-                        <div class="categoria">Construcciones</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>  
-                  <!-- Portafolio 16 -->
-                  <div class="caja-portafolio">
-                    <div class="caja">
-                      <div class="overlay">
-                        <a target="_blank" href="http://encuentraempleord.com/"><img
-                          src="img/portafolio/Encuentraempleord-portafolio.jpg"
-                          alt=""
-                        /></a>
-                        <div class="caja-contenido">
-                          <div class="icono">
-                            <div class="flexbox">
-                              <a target="_blank" href="http://encuentraempleord.com/"><span><i class="fas fa-plus"></i></span></a>
-                            </div>
-                          </div>
-                          <div class="titulo">Encuentra Empleo RD</div>
-                          <div class="categoria">Empleos</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>                                                                                                     
-            <!-- FIN PORTAFOLIO  -->
-            </div>
-          </div>
-        </div>
-        <!-- FIN PORTAFOLIO -->
-
-        <!-- Experiencia profecional / Academica -->
-        
-        <div id="mis-experiencias" class="experiencias contenedor-full">
-            <div class="contenedor">
-                <div class="titulo">
-                   <h3>Experiencia</h3>
-                </div>
-                <div class="caja-tipodeexperiencia">
-                  <div class="caja">
-                    <button class="educacion activo" id="educacion">Educación</button>
-                    <Button class="laboral" id="laboral">Laboral</Button>
-                  </div>
-                </div>
-                <div class="experiencias-listas">
-                  <!-- EXPERIENCIA EDUCACION -->
-                  <div id="experienciaEducacion" class="grid-experiencias experienciaEducacion activo">
-                    <!-- Experiencia Educacion 1 -->
-                    <div class="caja-experiencia">
-                        <div class="contenido-titulo">
-                          <div class="titulo">Colegio Oratorio María Auxiliadora (OMA)</div>
-                          <div class="fecha"><span>Finalizado en el 2005</span></div>
-                        </div>
-                        <div class="contenido-descripcion">
-                          <div class="texto">
-                            <p>Bachiller</p>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- Experiencia Educacion 2 -->
-                    <div class="caja-experiencia">
-                      <div class="contenido-titulo">
-                        <div class="titulo">Universidad Católica Santo Domingo (UCSD)</div>
-                        <div class="fecha"><span>Finalizado en el 2012</span></div>
-                      </div>
-                      <div class="contenido-descripcion">
-                        <div class="texto">
-                          <p>Lic. en publicidad</p>
-                        </div>
-                      </div>
-                  </div>  
-                    <!-- Experiencia Educacion 3 -->
-                    <div class="caja-experiencia">
-                      <div class="contenido-titulo">
-                        <div class="titulo">Universidad Antonio de Nebrija. Madrid, España</div>
-                        <div class="fecha"><span>Finalizado en el 2015</span></div>
-                      </div>
-                      <div class="contenido-descripcion">
-                        <div class="texto">
-                          <p>Máster en Dirección de Publicidad Integrada (TBWA)</p>
-                        </div>
-                      </div>
-                  </div>                                    
-                  </div>
-                  <!-- EXPERIENCIA LABORAL -->
-                  <div id="experienciaLaboral" class="grid-experiencias experienciaLaboral" data-experiencia="educacion">
-                    <!-- Experiencia Educacion 1 -->
-                    <div class="caja-experiencia">
-                        <div class="contenido-titulo">
-                          <div class="titulo">Mente Elástica</div>
-                          <div class="fecha"><span>2015-2016</span> Web Master</div>
-                        </div>
-                        <div class="contenido-descripcion">
-                          <div class="texto">
-                            <p>Encargado de desarrollo de páginas web.</p>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- Experiencia Educacion 2 -->
-                    <div class="caja-experiencia">
-                      <div class="contenido-titulo">
-                        <div class="titulo">Dumplignet</div>
-                        <div class="fecha"><span>2017-2018</span> Webmaster y diseñador gráfico</div>
-                      </div>
-                      <div class="contenido-descripcion">
-                        <div class="texto">
-                          <p>Encargado de diseño, maquetación y programación de páginas web.</p>
-                        </div>
-                      </div>
-                  </div>  
-                    <!-- Experiencia Educacion 3 -->
-                    <div class="caja-experiencia">
-                      <div class="contenido-titulo">
-                        <div class="titulo">EL TALLER</div>
-                        <div class="fecha"><span>2018-Actualidad</span> Webmaster y diseñador gráfico</div>
-                      </div>
-                      <div class="contenido-descripcion">
-                        <div class="texto">
-                          <p>Encargado de diseño, maquetación y programación de páginas web. Realización de campañas de marketing digital, SEO, SEM y MailChimp.</p>
-                        </div>
-                      </div>
-                  </div>                                    
-                  </div>                  
-                </div>
-            </div>
-        </div>
- 
-        <!-- FIN EXPERIENCIAS -->
-
-        <!-- FORMULARIO DE CONTACTO-->
-
-        <div id="contactame" class="formulario contenedor-full">
-           <div class="contenedor">
+            <div class="conocimientos-tecnicos">
               <div class="titulo">
-                <h3>Contáctame</h3>
+                <h3>Conocimientos</h3>
               </div>
-                <div class="flexbox">
-                  <div class="caja-formulario">
-                       <div class="correo"><i class="fas fa-envelope"></i> <a href="mailto:gregorick.liriano@gmail.com">gregorick.liriano@gmail.com</a></div>
-                       <div class="telefono"><i class="fas fa-phone-volume"></i><a target="_blank" href="tel:8292028514"> (829) 202-8514</a></div>
+              <div class="flexbox">
+                <div class="colunna-progressbar-uno">
+                  <div class="caja">
+                    <div class="conocimiento">
+                      <div class="flexbox">
+                        <span class="nombre">HTML5</span>
+                        <div class="numeroporciento"><span>90%</span></div>
+                      </div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="barra"></div>
+                    </div>
                   </div>
-                  <!-- FIN FORMULARIO -->
-                  <div id="imagenIzquierda" class="imagen-izquierda">
-                    <img src="img/contacto-imagen.jpg" alt="Contacto Imagen">
+                  <div class="caja">
+                    <div class="conocimiento">
+                      <div class="flexbox">
+                        <span class="nombre">CSS / SASS</span>
+                        <div class="numeroporciento"><span>90%</span></div>
+                      </div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="barra"></div>
+                    </div>
+                  </div>
+                  <div class="caja">
+                    <div class="conocimiento">
+                      <div class="flexbox">
+                        <span class="nombre">JAVASCRIPT</span>
+                        <div class="numeroporciento"><span>85%</span></div>
+                      </div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="barra"></div>
+                    </div>
                   </div>
                 </div>
-           </div>
-        </div>   
+                <div class="columna-progressbar-dos">
+                  <div class="caja">
+                    <div class="conocimiento">
+                      <div class="flexbox">
+                        <span class="nombre">WORDPRESS</span>
+                        <div class="numeroporciento"><span>90%</span></div>
+                      </div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="barra"></div>
+                    </div>
+                  </div>
+                  <div class="caja">
+                    <div class="conocimiento">
+                      <div class="flexbox">
+                        <span class="nombre">REACT / NODE / EXPRESS</span>
+                        <div class="numeroporciento"><span>65%</span></div>
+                      </div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="barra"></div>
+                    </div>
+                  </div>
+                  <div class="caja">
+                    <div class="conocimiento">
+                      <div class="flexbox">
+                        <span class="nombre">Mysql / MOGODB</span>
+                        <div class="numeroporciento"><span>65%<span></div>
+                      </div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="barra"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- HERRAMIENTAS DE TRABAJO -->
 
-      </main>
-      <footer></footer>
-    </div>
+          <div class="grid-herramientas">
+            <div class="imagen">
+              <img src="img/adobe-photoshop.png" alt="Photoshop" />
+            </div>
+            <div class="imagen">
+              <img src="img/AdobeXD.png" alt="Photoshop" />
+            </div>
+            <div class="imagen">
+              <img src="img/VisualCodeEstudio.png" alt="Photoshop" />
+            </div>
+            <div class="imagen">
+              <img src="img/wordpress.png" alt="Photoshop" />
+            </div>
+            <div class="imagen">
+              <img src="img/mern-img.png" alt="Photoshop" />
+            </div>
+          </div>
+          <!-- fin herramientas de trabajo -->
+        </div>
+      </div>
 
-    <script src="js/particles.min.js"></script>
-    <script src="js/type.js"></script>
-    <script src="js/smtp.js"></script>
-    <script src="js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/cba5a97b01.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <!-- FIN SOBRE MI -->
+
+      <div id="mis-servicios" class="mis-servicios contenedor-full">
+        <div class="contenedor">
+          <div class="titulo">
+            <h3>Servicios</h3>
+          </div>
+          <div class="servicios-cajas">
+            <div class="caja">
+              <div class="icon"><i class="fas fa-tablet-alt"></i></div>
+              <div class="titulo"><span>Diseño Personalizado</span></div>
+              <div class="text">
+                <p>
+                  Diseño elegante de páginas web desde cero desarrollado a la medida.
+                </p>
+              </div>
+            </div>
+            <div class="caja">
+              <div class="icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="titulo"><span>Desarrollo Web</span></div>
+              <div class="text">
+                <p>
+                  Desarrollo web dinámico para escritorio y dispositivos móviles, maquetado y programado a la medida con
+                  rendimiento y seguridad optimizados.
+                </p>
+              </div>
+            </div>
+            <div class="caja">
+              <div class="icon"><i class="fas fa-bullhorn"></i></div>
+              <div class="titulo"><span>Marketing Digital</span></div>
+              <div class="text">
+                <p>
+                  Posicionamiento web a través del SEO, SEM y campañas de correos masivos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiencias -->
+
+      <div id="mis-portafolios" class="portafolio contenedor-full">
+        <div class="contenedor">
+          <div class="titulo">
+            <h3>Portafolio</h3>
+          </div>
+          <div class="grid-portafolio">
+            <!-- Portafolio grid 01 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://angelicayjuan.com/"> <img src="img/portafolio/angelicayjuan.jpg"
+                      alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://angelicayjuan.com/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Angélica y Juan</div>
+                    <div class="categoria">Celebración de bodas</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio grid 01 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://studikard.com/"> <img src="img/portafolio/studikardcom.jpg"
+                      alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://studikard.com/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Studika</div>
+                    <div class="categoria">Centro Diagnóstico Intergral</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio grid 01 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://hris.do/"> <img src="img/portafolio/hrisdo.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://hris.do/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Herrera Rodriguez</div>
+                    <div class="categoria">Complejos deportivos</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio grid 01 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://sq.com.do/"> <img
+                      src="img/portafolio/shutterquisqueyanos-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://sq.com.do/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Shutter Quisqueyanos</div>
+                    <div class="categoria">Instalación de Shutters</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 18 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://publichealthliteracy.org/"><img
+                      src="img/portafolio/publichealthliteracyGlobal-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://publichealthliteracy.org/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Public Health Literacy </div>
+                    <div class="categoria">Salud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 19 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://elintermedio.com.do/"><img
+                      src="img/portafolio/elintermedio-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://elintermedio.com.do/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">El Intermedio</div>
+                    <div class="categoria">Noticias</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 1 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://mdmadesigngroup.com/mdma/"><img
+                      src="img/portafolio/mdmadesigngrup-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://mdmadesigngroup.com/mdma/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">MDMA</div>
+                    <div class="categoria">Men Magazine</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 2 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://stylemecocco.com/">
+                    <img src="img/portafolio/stylemecocco-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://stylemecocco.com/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Style me cocco</div>
+                    <div class="categoria">Hogar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 3 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://mdmadesigngroup.com/hervoice/"><img
+                      src="img/portafolio/hervoicedesigngrup-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://mdmadesigngroup.com/hervoice/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Hervoice</div>
+                    <div class="categoria">Magazine</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 4 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://extragas.com.do/"><img src="img/portafolio/Extragas-portafolio.jpg"
+                      alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://extragas.com.do/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Extragas</div>
+                    <div class="categoria">Estación de Gas</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 5 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://miraclemedicalcentre.com/"><img
+                      src="img/portafolio/miraclemedicalcentre-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://miraclemedicalcentre.com/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Miracle Medical Centre</div>
+                    <div class="categoria">Salud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 6 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://grlnow.com/yashodacorporation/"> <img
+                      src="img/portafolio/yashodacorporation-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://grlnow.com/yashodacorporation/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Yashoda Corporation</div>
+                    <div class="categoria">Properties</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 7 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://elsantodomingonoticias.net/"><img
+                      src="img/portafolio/elsantodomingonoticias-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://elsantodomingonoticias.net/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Santo Domingo Noticias</div>
+                    <div class="categoria">Noticias</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 8 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://vaginoplastialaser.com.do/"><img
+                      src="img/portafolio/Vaginoplastiard-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://vaginoplastialaser.com.do/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">vaginoplastia Laser</div>
+                    <div class="categoria">Salud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 9 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://azizeinforma.com/"><img
+                      src="img/portafolio/azizeinforma-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://azizeinforma.com/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Azizeinforma</div>
+                    <div class="categoria">Noticias</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 10 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://eslabones.es/"><img src="img/portafolio/Eslabones-portafolio.jpg"
+                      alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://eslabones.es/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Eslabones</div>
+                    <div class="categoria">Viajes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 11 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://www.publichealthliteracy-conference.org/"><img
+                      src="img/portafolio/publichealthliteracy-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://www.publichealthliteracy-conference.org/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Public Health Literacy</div>
+                    <div class="categoria">Salud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 12 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://trulynolendominicana.com/"><img
+                      src="img/portafolio/trulynolen-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://trulynolendominicana.com/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Truly Nolen Dominicana</div>
+                    <div class="categoria">Fumigadores</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 13 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://gelantibacterialvenus.com/"><img
+                      src="img/portafolio/gelantibacterialVenusportafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://gelantibacterialvenus.com/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Gel Antibacterial Venus</div>
+                    <div class="categoria">Salud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 14 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://andresalma.com/"><img src="img/portafolio/andresalma-portafolio.jpg"
+                      alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://andresalma.com/"><span><i class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Andras Alma</div>
+                    <div class="categoria">Política</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 15 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://constructoramac.com.do/"><img src="img/portafolio/Mac-portafolio.jpg"
+                      alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://constructoramac.com.do/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Constructora Mac</div>
+                    <div class="categoria">Construcciones</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portafolio 16 -->
+            <div class="caja-portafolio">
+              <div class="caja">
+                <div class="overlay">
+                  <a target="_blank" href="http://encuentraempleord.com/"><img
+                      src="img/portafolio/Encuentraempleord-portafolio.jpg" alt="" /></a>
+                  <div class="caja-contenido">
+                    <div class="icono">
+                      <div class="flexbox">
+                        <a target="_blank" href="http://encuentraempleord.com/"><span><i
+                              class="fas fa-plus"></i></span></a>
+                      </div>
+                    </div>
+                    <div class="titulo">Encuentra Empleo RD</div>
+                    <div class="categoria">Empleos</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN PORTAFOLIO  -->
+          </div>
+        </div>
+      </div>
+      <!-- FIN PORTAFOLIO -->
+
+      <!-- Experiencia profecional / Academica -->
+
+      <div id="mis-experiencias" class="experiencias contenedor-full">
+        <div class="contenedor">
+          <div class="titulo">
+            <h3>Experiencia</h3>
+          </div>
+          <div class="caja-tipodeexperiencia">
+            <div class="caja">
+              <button class="educacion activo" id="educacion">Educación</button>
+              <Button class="laboral" id="laboral">Laboral</Button>
+            </div>
+          </div>
+          <div class="experiencias-listas">
+            <!-- EXPERIENCIA EDUCACION -->
+            <div id="experienciaEducacion" class="grid-experiencias experienciaEducacion activo">
+              <!-- Experiencia Educacion 1 -->
+              <div class="caja-experiencia">
+                <div class="contenido-titulo">
+                  <div class="titulo">Colegio Oratorio María Auxiliadora (OMA)</div>
+                  <div class="fecha"><span>Finalizado en el 2005</span></div>
+                </div>
+                <div class="contenido-descripcion">
+                  <div class="texto">
+                    <p>Bachiller</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experiencia Educacion 2 -->
+              <div class="caja-experiencia">
+                <div class="contenido-titulo">
+                  <div class="titulo">Universidad Católica Santo Domingo (UCSD)</div>
+                  <div class="fecha"><span>Finalizado en el 2012</span></div>
+                </div>
+                <div class="contenido-descripcion">
+                  <div class="texto">
+                    <p>Lic. en publicidad</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experiencia Educacion 3 -->
+              <div class="caja-experiencia">
+                <div class="contenido-titulo">
+                  <div class="titulo">Universidad Antonio de Nebrija. Madrid, España</div>
+                  <div class="fecha"><span>Finalizado en el 2015</span></div>
+                </div>
+                <div class="contenido-descripcion">
+                  <div class="texto">
+                    <p>Máster en Dirección de Publicidad Integrada (TBWA)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- EXPERIENCIA LABORAL -->
+            <div id="experienciaLaboral" class="grid-experiencias experienciaLaboral" data-experiencia="educacion">
+              <!-- Experiencia Educacion 1 -->
+              <div class="caja-experiencia">
+                <div class="contenido-titulo">
+                  <div class="titulo">Mente Elástica</div>
+                  <div class="fecha"><span>2015-2016</span> Web Master</div>
+                </div>
+                <div class="contenido-descripcion">
+                  <div class="texto">
+                    <p>Encargado de desarrollo de páginas web.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experiencia Educacion 2 -->
+              <div class="caja-experiencia">
+                <div class="contenido-titulo">
+                  <div class="titulo">Dumplignet</div>
+                  <div class="fecha"><span>2017-2018</span> Webmaster y diseñador gráfico</div>
+                </div>
+                <div class="contenido-descripcion">
+                  <div class="texto">
+                    <p>Encargado de diseño, maquetación y programación de páginas web.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experiencia Educacion 3 -->
+              <div class="caja-experiencia">
+                <div class="contenido-titulo">
+                  <div class="titulo">EL TALLER</div>
+                  <div class="fecha"><span>2018-Actualidad</span> Webmaster y diseñador gráfico</div>
+                </div>
+                <div class="contenido-descripcion">
+                  <div class="texto">
+                    <p>Encargado de diseño, maquetación y programación de páginas web. Realización de campañas de
+                      marketing digital, SEO, SEM y MailChimp.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIN EXPERIENCIAS -->
+
+      <!-- FORMULARIO DE CONTACTO-->
+
+      <div id="contactame" class="formulario contenedor-full">
+        <div class="contenedor">
+          <div class="titulo">
+            <h3>Contáctame</h3>
+          </div>
+          <div class="flexbox">
+            <div class="caja-formulario">
+              <div class="correo"><i class="fas fa-envelope"></i> <a
+                  href="mailto:gregorick.liriano@gmail.com">gregorick.liriano@gmail.com</a></div>
+              <div class="telefono"><i class="fas fa-phone-volume"></i><a target="_blank" href="tel:8292028514"> (829)
+                  202-8514</a></div>
+            </div>
+            <!-- FIN FORMULARIO -->
+            <div id="imagenIzquierda" class="imagen-izquierda">
+              <img src="img/contacto-imagen.jpg" alt="Contacto Imagen">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer></footer>
+  </div>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/type.js"></script>
+  <script src="js/smtp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/2365178896.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
