@@ -1,0 +1,151 @@
+.bcg-parallax {
+  padding: 650px 0;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bcg {
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+.swiper-container {
+  margin-left: 0;
+}
+
+.opacitynone {
+  opacity: 0 !important;
+}
+
+.transform-cell {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.project {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 1.25s;
+  transition: 1.25s;
+}
+
+.project-down {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 1.25s;
+  transition: 1.25s;
+}
+
+.project-left {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: 1.25s;
+  transition: 1.25s;
+}
+
+.project-right {
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition: 1.25s;
+  transition: 1.25s;
+}
+
+.project-zoom {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.65s;
+  transition: 0.65s;
+}
+
+.project-zoom_dos {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.project-zoom_tres {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.project-zoom_cuatro {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.project-zoom_cinco {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 2.8s;
+  transition: 2.8s;
+}
+
+.project-zoom_seis {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 3.1s;
+  transition: 3.1s;
+}
+
+.fade-left {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.fade-right {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.fade-in {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.zoom-in {
+  opacity: 1;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+}
+
+.fade-up {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=parallax.css.map */

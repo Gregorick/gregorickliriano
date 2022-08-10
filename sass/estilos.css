@@ -416,9 +416,6 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "caja1 caja2 caja3" "caja4 caja5 caja6" "caja7 caja8 caja9" "caja10 caja11 caja12" "caja13 caja14 caja15" "caja16 caja17 caja18" "caja19 caja20 caja21" "caja22 caja23 caja24";
   grid-gap: 30px;
 }
 
@@ -444,330 +441,6 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
           transform: translateX(0);
 }
 
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: caja1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(1) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: caja2;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(2) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: caja3;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(3) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: caja4;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(4) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: caja5;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(5) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: caja6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(6) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: caja7;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(7) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: caja8;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(8) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: caja9;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(9) .caja .overlay .caja-contenido {
-  bottom: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(10) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: caja10;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(10) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(11) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: caja11;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(11) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(12) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: caja12;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(12) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(13) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: caja13;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(13) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(14) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: caja14;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(14) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(15) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-  grid-area: caja15;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(15) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(16) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: caja16;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(16) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(17) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: caja17;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(17) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(18) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 3;
-  grid-area: caja18;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(18) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(19) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: caja19;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(19) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(20) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-  grid-area: caja20;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(20) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(21) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
-  grid-area: caja21;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(21) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(22) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: caja22;
-  position: relative;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio:nth-child(22) .caja .overlay .caja-contenido {
-  top: 100px;
-}
-
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja {
   height: auto;
   border-radius: 0.5em;
@@ -782,15 +455,19 @@ body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portaf
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja .overlay img {
   width: 100%;
-  height: auto;
+  height: 440px;
   -webkit-box-shadow: 2px 3px 6px #00000030;
           box-shadow: 2px 3px 6px #00000030;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 body .contenedor-full main .portafolio .contenedor .grid-portafolio .caja-portafolio .caja .overlay .caja-contenido {
   position: absolute;
-  bottom: 25px;
-  left: 25px;
+  bottom: 60px;
+  left: 35px;
   z-index: 3;
   opacity: 0;
   -webkit-transition: all 0.8s ease;
@@ -878,12 +555,12 @@ body .contenedor-full main .experiencias .contenedor .caja-tipodeexperiencia .ca
 }
 
 body .contenedor-full main .experiencias .contenedor .caja-tipodeexperiencia .caja button.activo {
-  background: #FF324D;
+  background: #ff324d;
   color: #fff;
 }
 
 body .contenedor-full main .experiencias .contenedor .caja-tipodeexperiencia .caja button:hover {
-  background: #FF324D;
+  background: #ff324d;
   color: #fff;
 }
 
@@ -945,7 +622,7 @@ body .contenedor-full main .experiencias .contenedor .experiencias-listas .grid-
 }
 
 body .contenedor-full main .experiencias .contenedor .experiencias-listas .grid-experiencias .caja-experiencia .contenido-titulo .fecha span {
-  color: #FF324D;
+  color: #ff324d;
 }
 
 body .contenedor-full main .experiencias .contenedor .experiencias-listas .grid-experiencias .caja-experiencia .contenido-descripcion .texto {
@@ -1018,7 +695,7 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario .co
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario i {
   font-size: 22px;
   margin-right: 5px;
-  color: #FF324D;
+  color: #ff324d;
 }
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario a {
@@ -1038,7 +715,7 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-nombre {
   width: 45%;
-  border-left: 5px solid #FF324D;
+  border-left: 5px solid #ff324d;
 }
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-nombre .flexbox .nombre {
@@ -1055,7 +732,8 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
   width: 100%;
 }
 
-body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-nombre .flexbox .nombre label, body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-nombre .flexbox .nombre input {
+body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-nombre .flexbox .nombre label,
+body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-nombre .flexbox .nombre input {
   width: 100%;
   padding: 15px 20px;
 }
@@ -1085,10 +763,11 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-left: 5px solid #FF324D;
+  border-left: 5px solid #ff324d;
 }
 
-body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-correo .flexbox label, body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-correo .flexbox input {
+body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-correo .flexbox label,
+body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .primerafila .label-correo .flexbox input {
   width: 100%;
   padding: 15px 15px;
 }
@@ -1108,7 +787,7 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
 }
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .segundafila .label-mensaje {
-  border-left: 5px solid #FF324D;
+  border-left: 5px solid #ff324d;
 }
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .segundafila .label-mensaje .flexbox {
@@ -1124,7 +803,8 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
           flex-direction: column;
 }
 
-body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .segundafila .label-mensaje .flexbox label, body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .segundafila .label-mensaje .flexbox textarea {
+body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .segundafila .label-mensaje .flexbox label,
+body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .segundafila .label-mensaje .flexbox textarea {
   width: 100%;
   padding: 10px 15px;
 }
@@ -1141,7 +821,7 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
 }
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .tercerafila .boton input {
-  background: #FF324D;
+  background: #ff324d;
   color: #fff;
   padding: 10px 25px;
   border: 0;
@@ -1152,8 +832,8 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
 }
 
 body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario form .tercerafila .boton input:hover {
-  border: 1px solid #FF324D;
-  color: #FF324D;
+  border: 1px solid #ff324d;
+  color: #ff324d;
   background: transparent;
   font-weight: bold;
 }
@@ -1583,10 +1263,12 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .colunna-progressbar-uno, body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .columna-progressbar-dos {
+  body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .colunna-progressbar-uno,
+  body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .columna-progressbar-dos {
     width: 100% !important;
   }
-  body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .colunna-progressbar-uno .nombre, body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .columna-progressbar-dos .nombre {
+  body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .colunna-progressbar-uno .nombre,
+  body main .Sobre-mi .flexbox .conocimientos-tecnicos .flexbox .columna-progressbar-dos .nombre {
     font-weight: bold;
   }
   body main .Sobre-mi .grid-herramientas {
@@ -1617,7 +1299,6 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
   body main .portafolio .grid-portafolio {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
-        grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9" "caja10" "caja11" "caja12" "caja13" "caja14" "caja15" "caja16" "caja17" "caja18" "caja19"      !important;
   }
   body main .experiencias {
     padding: 50px !important;
@@ -1651,7 +1332,8 @@ body .contenedor-full main .formulario .contenedor .flexbox .caja-formulario for
   body main .formulario .contenedor .flexbox .caja-formulario {
     width: 90% !important;
   }
-  body main .formulario .contenedor .flexbox .caja-formulario form .label-nombre, body main .formulario .contenedor .flexbox .caja-formulario form .label-correo {
+  body main .formulario .contenedor .flexbox .caja-formulario form .label-nombre,
+  body main .formulario .contenedor .flexbox .caja-formulario form .label-correo {
     width: 100% !important;
     margin-bottom: 20px;
   }
