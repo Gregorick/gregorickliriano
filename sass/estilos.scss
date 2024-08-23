@@ -432,22 +432,28 @@ body {
                     transition: all 0.8s ease;
                     transform: translateX(-50px);
                     color: #fff;
+                    a {
+                      text-decoration: none !important;
+                    }
                     .icono {
                       padding: 0 0 20px 0;
                       span {
                         background: #fff;
+                        color: #333;
                         padding: 7px 10px;
                         border-radius: 50%;
                         transition: all 0.5s ease;
+                        font-size: 2.3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 45px;
+                        width: 45px;
+                        
                         &:hover {
                           background: transparent;
                           border: 2px solid #fff;
-                          i {
-                            color: #fff;
-                          }
-                        }
-                        i {
-                          color: #ff324d;
+                          color: #fff;
                         }
                       }
                     }
@@ -1039,7 +1045,6 @@ body {
           button {
             background: transparent;
             width: fit-content;
-            display: block;
             padding: 7px 15px;
             font-size: 16px;
             color: #fff;
@@ -1048,14 +1053,20 @@ body {
             margin-bottom: 15px;
             cursor: pointer;
             transition: all 0.5s ease;
-            display: inline-block !important;
+            display: flex !important;
+            align-items: center;
             outline: none;
+            svg  {
+              margin-right: 0.3rem;
+            }
             &:hover {
               background: #fff;
               color: #000;
-            }
-            i {
-              padding-right: 10px;
+              svg {
+                path {
+                  fill: #333;
+                }
+              }
             }
           }
           nav {
