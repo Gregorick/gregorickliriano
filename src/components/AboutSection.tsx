@@ -69,10 +69,11 @@ export default function AboutSection() {
               Conocimientos
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 flex-1 justify-between flex flex-col">
+            {/* Ajuste en el gap-y para separar más las dos columnas en móvil */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 flex-1 justify-between">
               
-              {/* Columna 1 */}
-              <div className="flex flex-col justify-around h-full py-2">
+              {/* Columna 1: Agregado gap-6 para móvil, md:gap-0 para escritorio */}
+              <div className="flex flex-col gap-6 md:gap-0 justify-around h-full py-2">
                 {skillsColumn1.map((skill) => (
                   <div key={skill.name} className="flex flex-col gap-2">
                     <div className="flex justify-between items-center text-sm font-semibold tracking-wide">
@@ -91,8 +92,8 @@ export default function AboutSection() {
                 ))}
               </div>
 
-              {/* Columna 2 */}
-              <div className="flex flex-col justify-around h-full py-2">
+              {/* Columna 2: Agregado gap-6 para móvil, md:gap-0 para escritorio */}
+              <div className="flex flex-col gap-6 md:gap-0 justify-around h-full py-2">
                 {skillsColumn2.map((skill) => (
                   <div key={skill.name} className="flex flex-col gap-2">
                     <div className="flex justify-between items-center text-sm font-semibold tracking-wide">

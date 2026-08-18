@@ -17,16 +17,16 @@ export default function Header() {
   ];
 
   return (
-    <div className="relative w-full bg-[#0e1f2e] min-h-screen flex flex-col overflow-hidden">
+    <div className="relative w-full bg-[#0e1f2e] min-h-[85vh] md:min-h-screen flex flex-col overflow-hidden">
       
       {/* Fondo de partículas */}
       <ParticlesBackground />
       
       {/* HEADER TOP (Logo y Navegación) */}
       <header className="max-w-[1100px] w-full mx-auto px-4 relative z-20">
-        <div className="flex justify-between items-center py-8">
+        <div className="flex justify-between items-center py-6 md:py-8">
           <div className="logo">
-            <span className="text-white text-3xl font-oxanium font-bold">
+            <span className="text-white text-2xl md:text-3xl font-oxanium font-bold">
               {"< Gregorick Liriano />"}
             </span>
           </div>
@@ -34,7 +34,7 @@ export default function Header() {
           {/* Botón Responsive (Mobile) */}
           <button
             onClick={() => setMenuActivo(!menuActivo)}
-            className="md:hidden flex items-center gap-2 border border-white text-white px-4 py-2 hover:bg-white hover:text-black transition-colors duration-300 relative z-50"
+            className="md:hidden flex items-center gap-2 border border-white text-white px-3 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-300 relative z-50"
           >
             <svg viewBox="0 0 20 20" width="1.2em" height="1.2em">
               <path
@@ -47,7 +47,7 @@ export default function Header() {
 
           {/* Navegación Desktop & Mobile */}
           <nav
-            className={`absolute md:relative top-[110px] md:top-0 left-0 w-full md:w-[55%] bg-white md:bg-transparent transition-transform duration-500 z-50 py-5 md:py-0 ${
+            className={`absolute md:relative top-[90px] md:top-0 left-0 w-full md:w-[55%] bg-white md:bg-transparent transition-transform duration-500 z-50 py-5 md:py-0 ${
               menuActivo ? "translate-x-0 shadow-lg md:shadow-none" : "-translate-x-full md:translate-x-0"
             }`}
           >
@@ -69,7 +69,7 @@ export default function Header() {
       </header>
 
       {/* PORTADA PERFIL (Hero) */}
-      <div className="flex-1 max-w-[1100px] w-full mx-auto px-4 relative flex flex-col md:flex-row justify-end items-center z-10">
+      <div className="flex-1 max-w-[1100px] w-full mx-auto px-4 relative flex flex-col md:flex-row justify-center md:justify-end items-center z-10">
         
         {/* Imagen anclada al fondo de la pantalla */}
         <div className="hidden md:block absolute bottom-0 left-4 md:left-4 lg:left-0 w-[45%] lg:w-[45%] max-w-[550px] z-10 pointer-events-none">
@@ -83,8 +83,8 @@ export default function Header() {
           />
         </div>
 
-        {/* Contenido principal */}
-        <div className="w-full md:w-[50%] flex flex-col justify-center items-center md:items-start text-center md:text-left z-20 pb-16 md:pb-24 pointer-events-auto">
+        {/* Contenido principal - Subido en móvil con -mt-12 */}
+        <div className="w-full md:w-[50%] flex flex-col justify-center items-center md:items-start text-center md:text-left z-20 pb-8 md:pb-24 -mt-12 md:mt-0 pointer-events-auto">
           <h1 className="text-white text-5xl md:text-6xl font-oxanium font-bold mb-4 tracking-wide">
             <span className="text-white inline-block">Gregorick</span> Liriano
           </h1>
@@ -112,7 +112,7 @@ export default function Header() {
             </p>
           </div>
           
-          <a href="#contactame">
+          <a href="#contacto">
             <button className="text-white bg-[#ff324d] px-8 py-3 rounded-full hover:bg-white hover:text-[#1d1e30] transition-colors duration-300 font-semibold shadow-lg">
               Contáctame
             </button>
