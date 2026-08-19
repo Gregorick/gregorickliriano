@@ -27,6 +27,12 @@ export default function PortfolioSection() {
   // Nuevo estado para controlar el Popup en la versión móvil
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // =========================================
+  // ESTADOS Y CONSTANTES DE PAGINACIÓN
+  // =========================================
+  const [paginaActual, setPaginaActual] = useState(1);
+  const PROYECTOS_POR_PAGINA = 20;
+
   useEffect(() => {
     const fetchPortafolios = async () => {
       try {
@@ -63,9 +69,18 @@ export default function PortfolioSection() {
           return terms.some((term) => term.name === filtroActivo);
         });
 
-  // Función combinada para actualizar el filtro y cerrar el popup en móviles
+  // =========================================
+  // LÓGICA DE CÁLCULO DE PAGINACIÓN
+  // =========================================
+  const totalPaginas = Math.ceil(proyectosFiltrados.length / PROYECTOS_POR_PAGINA);
+  const indiceUltimoProyecto = paginaActual * PROYECTOS_POR_PAGINA;
+  const indicePrimerProyecto = indiceUltimoProyecto - PROYECTOS_POR_PAGINA;
+  const proyectosPaginados = proyectosFiltrados.slice(indicePrimerProyecto, indiceUltimoProyecto);
+
+  // Función combinada para actualizar el filtro, CERRAR popup y REINICIAR paginación
   const handleFilterSelection = (filtro: string) => {
     setFiltroActivo(filtro);
+    setPaginaActual(1); // Volver a la página 1 al cambiar de categoría
     setIsModalOpen(false);
   };
 
@@ -94,12 +109,12 @@ export default function PortfolioSection() {
                 CONTROLES DE FILTRO (DESKTOP & MOBILE)
             ========================================= */}
             
-            {/* VERSIÓN DESKTOP: Pestañas visibles (Ocultas en pantallas menores a 'md') */}
+            {/* VERSIÓN DESKTOP: Pestañas visibles */}
             <div className="hidden md:flex flex-wrap justify-start gap-4 mb-12">
               {filtros.map((filtro) => (
                 <button
                   key={filtro}
-                  onClick={() => setFiltroActivo(filtro)}
+                  onClick={() => handleFilterSelection(filtro)}
                   className={`px-6 py-2 rounded-full font-semibold text-sm transition-all duration-300 ${
                     filtroActivo === filtro
                       ? "bg-[#ff324d] text-white shadow-md"
@@ -111,7 +126,7 @@ export default function PortfolioSection() {
               ))}
             </div>
 
-            {/* VERSIÓN MOBILE: Botón para abrir Popup (Oculto en pantallas mayores a 'md') */}
+            {/* VERSIÓN MOBILE: Botón para abrir Popup */}
             <div className="md:hidden w-full mb-8">
               <button
                 onClick={() => setIsModalOpen(true)}
@@ -129,14 +144,10 @@ export default function PortfolioSection() {
               </button>
             </div>
 
-            {/* =========================================
-                MODAL POPUP DE FILTROS (MOBILE)
-            ========================================= */}
+            {/* MODAL POPUP DE FILTROS (MOBILE) */}
             {isModalOpen && (
               <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 backdrop-blur-sm md:hidden">
                 <div className="bg-white w-full rounded-t-3xl p-6 pb-12 shadow-2xl transform transition-transform">
-                  
-                  {/* Encabezado del Modal */}
                   <div className="flex justify-between items-center mb-6">
                     <h3 className="text-xl font-bold font-oxanium text-gray-900">
                       Selecciona una categoría
@@ -150,8 +161,6 @@ export default function PortfolioSection() {
                       </svg>
                     </button>
                   </div>
-
-                  {/* Lista de botones en el Modal */}
                   <div className="flex flex-col gap-3 max-h-[60vh] overflow-y-auto">
                     {filtros.map((filtro) => (
                       <button
@@ -172,10 +181,10 @@ export default function PortfolioSection() {
             )}
 
             {/* =========================================
-                GRID DE PROYECTOS
+                GRID DE PROYECTOS (Ahora usa proyectosPaginados)
             ========================================= */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {proyectosFiltrados.map((proyecto) => {
+              {proyectosPaginados.map((proyecto) => {
                 const imageUrl =
                   proyecto._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
                 const projectLink = proyecto.meta?.link;
@@ -185,7 +194,6 @@ export default function PortfolioSection() {
                     key={proyecto.id}
                     className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-100"
                   >
-                    {/* Imagen del Proyecto */}
                     {imageUrl && (
                       <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                         <Image
@@ -197,14 +205,11 @@ export default function PortfolioSection() {
                         />
                       </div>
                     )}
-
-                    {/* Contenido */}
                     <div className="p-5 flex flex-col flex-1 justify-between">
                       <h4
                         className="text-lg font-bold font-oxanium mb-3 text-gray-900 line-clamp-2"
                         dangerouslySetInnerHTML={{ __html: proyecto.title.rendered }}
                       />
-                      
                       {projectLink ? (
                         <a
                           href={projectLink}
@@ -224,6 +229,45 @@ export default function PortfolioSection() {
                 );
               })}
             </div>
+
+            {/* =========================================
+                CONTROLES DE PAGINACIÓN (Se muestran solo si hay > 1 página)
+            ========================================= */}
+            {totalPaginas > 1 && (
+              <div className="flex justify-center items-center mt-12 gap-2 flex-wrap">
+                <button
+                  onClick={() => setPaginaActual((prev) => Math.max(prev - 1, 1))}
+                  disabled={paginaActual === 1}
+                  className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors font-semibold shadow-sm"
+                >
+                  Anterior
+                </button>
+                
+                <div className="flex gap-1 flex-wrap justify-center">
+                  {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((num) => (
+                    <button
+                      key={num}
+                      onClick={() => setPaginaActual(num)}
+                      className={`w-10 h-10 rounded-lg font-semibold transition-colors shadow-sm ${
+                        paginaActual === num
+                          ? "bg-[#ff324d] text-white border border-[#ff324d]"
+                          : "bg-white border border-gray-200 text-gray-600 hover:border-[#ff324d] hover:text-[#ff324d]"
+                      }`}
+                    >
+                      {num}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => setPaginaActual((prev) => Math.min(prev + 1, totalPaginas))}
+                  disabled={paginaActual === totalPaginas}
+                  className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors font-semibold shadow-sm"
+                >
+                  Siguiente
+                </button>
+              </div>
+            )}
           </>
         )}
       </div>
